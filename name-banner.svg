@@ -1,1 +1,48 @@
+<svg viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d0a1f"/>
+      <stop offset="55%" stop-color="#1a1033"/>
+      <stop offset="100%" stop-color="#2a1245"/>
+    </linearGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fff2c2"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#fff2c2"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
 
+  <rect width="1200" height="260" fill="url(#bg)"/>
+
+  <!-- soft twinkling stars around the name -->
+  <g fill="#ffffff">
+    <circle cx="120" cy="50" r="1.6"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="1080" cy="60" r="1.6"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="210" r="1.3"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.3s" repeatCount="indefinite"/></circle>
+    <circle cx="1000" cy="200" r="1.3"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.9s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- glowing name -->
+  <text x="600" y="140" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="80" font-weight="bold" fill="url(#goldText)" filter="url(#glow)" letter-spacing="4">
+    ASIF HANEEFA
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="2.4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- tagline -->
+  <text x="600" y="190" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"
+        font-size="22" fill="#f2e6c8" opacity="0.9" letter-spacing="2">
+    AI &amp; Data Science Engineer  |  Building Intelligent Systems
+  </text>
+
+  <!-- thin decorative rule -->
+  <line x1="380" y1="210" x2="820" y2="210" stroke="#ffd700" stroke-width="1" opacity="0.5"/>
+</svg>
