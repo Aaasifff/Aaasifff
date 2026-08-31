@@ -12,7 +12,7 @@
 
 <br/>
 
-<img src="./assets/wizard-banner.svg" width="100%" alt="A witch flying on a broomstick past the moon, with warm hanging lanterns on the left and a spell-casting silhouette on the right" />
+<img src="./wizard-banner.svg" width="100%" alt="A witch flying on a broomstick past the moon, with warm hanging lanterns on the left and a spell-casting silhouette on the right" />
 
 </div>
 
